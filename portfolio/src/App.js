@@ -23,21 +23,23 @@ function App() {
   return (
     <div className="container">
       <section className='overview'>
-        <div id="techStackIcons">
+      {/* <h1>Overview</h1> */}
+        
+        <div className='overview-text'>
+          <p id="overviewcontent">I am 3 years experienced software developer having good command in JavaScript, Node.js, React.js, Java, PostgreSQL. During this period, I wrote a lot of industrial level code and most of my work is on production.</p>
+          <img id="mypic" src= {MyPic} alt="No profile pic"/>
+          <div id="techStackIcons">
           {
             icons.map(Icon => {
               return (<div
                 className = 'float'
-                style={{ position: 'absolute',top: helper.initialy(), right: helper.initialx(), rotate: helper.initialTilt()} }
+                // style={{ position: 'absolute',top: helper.initialy(), right: helper.initialx(), rotate: helper.initialTilt()} }
               >
                 <Icon/>
               </div>)
             })
           }
         </div>
-        <div className='overview-text'>
-          <p id="overviewcontent">I am 3 years experienced software developer having good command in JavaScript, Node.js, React.js, Java, PostgreSQL. During this period, I wrote a lot of industrial level code and most of my work is on production.</p>
-          <img id="mypic" src= {MyPic} alt="No profile pic"/>
         </div>
 
       </section>

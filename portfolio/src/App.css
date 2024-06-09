@@ -84,7 +84,8 @@ section{
 }
 
 .float {
-  animation: float-horizontal 1s ease-in-out ;
+  margin: 0 10px 0 10px;
+  animation: float-horizontal 20s ease-in-out infinite;
   z-index: 2;
 }
 
@@ -94,30 +95,35 @@ h1{
 }
 
 @keyframes float-horizontal {
-  0% {
+  /* 0% {
     transform: scale(0);
   }
   100% {
     transform: scale(1);
     rotate: 0;
-  }
-  /* 0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(50vw, -25vh);
-  }
-  75% {
-    transform: translate(-50vw, 25vh);
+  } */
+  0% {
+    transform: translate(-30vw, 0);
   }
 
+  50%{
+    transform: translate(30vw, 0);
+  }
   100% {
-    transform: translateX(0, 0);
-  } */
+    transform: translate(-30vw, 0);
+  }
+}
+
+#techStackIcons{
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 #mypic{
-  border-radius: 1cm;
+  box-shadow: 5px 5px 5px black;
+  transition: border-width 0.6s linear;
+  border-radius: 10px;
   margin: 1em;
   justify-content: center;
 
