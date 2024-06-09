@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+  font-family: "Playfair Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scrollbar-width: thin; /* Options: auto, thin */
+  scrollbar-color: #888 #f1f1f1; /* thumb color, track color */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Scrollbar Thumb */
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 10px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+.container{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+
+  /* display: grid; */
+}
+
+section{
+  font-size: xx-large;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  scroll-snap-align: start;
+  grid-template-rows: subgrid;
+}
+
+
+.overview{
+  background: url('../public/space.jpg');
+  background-size:contain;
+  position: relative;
+  color: #f1f1f1;  
+}
+
+
+.overview-text {
+  width: 90%;
+  height: 90%;
+  /* display:contents; */
+  align-items: center;
+  backdrop-filter: blur(1px);
+  background: #ffffff41;
+  border-radius: .5rem;
+}
+#overviewcontent{
+  font-size: large;
+  margin: 1em;
+}
+
+.experience{
+  background-color: red;
+}
+
+.projects{
+  background-color: royalblue;
+}
+
+.education{
+  background-color: rgb(46, 199, 151);
+}
+
+.float {
+  animation: float-horizontal 1s ease-in-out ;
+  z-index: 2;
+}
+
+h1{
   color: white;
+  text-shadow: 1px 1px 4px black; 
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes float-horizontal {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    rotate: 0;
+  }
+  /* 0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(50vw, -25vh);
+  }
+  75% {
+    transform: translate(-50vw, 25vh);
+  }
+
+  100% {
+    transform: translateX(0, 0);
+  } */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#mypic{
+  border-radius: 1cm;
+  margin: 1em;
+  justify-content: center;
+
 }
