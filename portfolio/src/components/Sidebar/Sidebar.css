@@ -1,0 +1,9 @@
+.sideBar{
+    position:absolute;
+    display: grid;
+    cursor: pointer;
+    background:#ffffff41;
+    z-index: 5;
+    align-content: center;
+    height:100%
+}

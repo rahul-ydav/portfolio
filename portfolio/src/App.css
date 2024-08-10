@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
   font-family: "Playfair Display", sans-serif;
@@ -29,12 +29,16 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid var(--scrollbarBG);
 }
 
+.topEle{
+  /* display:block; */
+  /* unicode-bidi: isolate; */
+  /* position: relative; */
+}
+
 .container{
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
-
-  /* display: grid; */
 }
 
 section{
@@ -53,14 +57,13 @@ section{
   background: url('../public/space.jpg');
   background-size:contain;
   position: relative;
-  color: #f1f1f1;  
+  color: #f1f1f1;
 }
 
 
 .overview-text {
   width: 90%;
   height: 90%;
-  /* display:contents; */
   align-items: center;
   backdrop-filter: blur(1px);
   background: #ffffff41;
@@ -69,6 +72,21 @@ section{
 #overviewcontent{
   font-size: large;
   margin: 1em;
+}
+
+#nameInOverview{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+.overviewSpan{
+  font-family: "Fira Sans", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.2rem;
 }
 
 .experience{
@@ -114,7 +132,21 @@ h1{
   }
 }
 
+.firstBlock{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.overviewAllText{
+  display: inline-block ;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 #techStackIcons{
+  background-color: black;
   align-items: center;
   justify-content: center;
   display: flex;
