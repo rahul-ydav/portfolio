@@ -2,8 +2,18 @@
     position:absolute;
     display: grid;
     cursor: pointer;
-    background:#ffffff41;
+    /* background:#ffffff41; */
     z-index: 5;
     align-content: center;
     height:100%
+}
+
+.sideBarSvg{
+    fill: white;
+    stroke: rgb(120 110 110);
+    stroke-width: 1;
+}
+
+.sideBar a{
+    margin-bottom: .5em;
 }
