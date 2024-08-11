@@ -1,8 +1,13 @@
 .overview{
-  background: url('../../../public/space.jpg');
+  /* background: url('../../../public/space.jpg'); */
+  /* background-color: #1a1831; */
+  background-color: #1a1831;
+  background-image: linear-gradient(225deg, #1a1831 0%, #371852 50%, #182f40 100%);
   background-size:contain;
   position: relative;
   color: #f1f1f1;
+  overflow: hidden;
+  /* z-index: -10; */
 }
 
 .overview-text {
@@ -10,9 +15,10 @@
   height: 90%;
   align-items: center;
   backdrop-filter: blur(1px);
-  background: #ffffff41;
+  /* background: #ffffff41; */
   border-radius: .5rem;
 }
+
 
 #overviewcontent{
   font-size: large;
@@ -68,7 +74,7 @@
 }
 
 #techStackIcons{
-  background-color: black;
+  /* background-color: black; */
   align-items: center;
   justify-content: center;
   display: flex;
@@ -81,3 +87,44 @@
   margin: 1em;
   justify-content: center;
 }
+
+/* animated background css */
+.bubbles{
+  position:relative;
+  display: flex;
+}
+
+.bubbles span{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: aqua;
+  margin: 0 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #4fc3dc44,
+  0 0 50px aqua,
+  0 0 50px aqua;
+  /* z-index: -5; */
+  animation: animate 15s linear infinite;
+  animation-duration: calc(150s /var(--i));
+}
+
+.bubbles span:nth-child(even){
+  background: #e2518bdb;
+  box-shadow: 0 0 0 10px #4fc3dc44,
+  0 0 50px #e2518bdb,
+  0 0 50px #e2518bdb;
+}
+
+@keyframes animate
+{
+  0%
+  {
+    transform: translateY(100vh) scale(0);
+  }
+  100%
+  {
+    transform: translateY(-30vh) scale(1);
+  }
+}
+
