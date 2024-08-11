@@ -3,6 +3,7 @@ import './App.css';
 
 import Sidebar from "./components/Sidebar/Sidebar";
 import OverviewSection from "./components/OverviewSection/OverviewSection";
+import SkillsSection from "./components/SkillsSection/SkillsSection";
 
 function App() {
   return (
@@ -18,9 +19,7 @@ function App() {
         <section className='projects'>
           <h1>Projects</h1>
         </section>
-        <section className='education'>
-          <h1>Educational BackGround</h1>
-        </section>
+        <SkillsSection/>
       </div>
     </div>
   );

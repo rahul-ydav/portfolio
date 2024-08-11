@@ -55,10 +55,6 @@ section{
   background-color: royalblue;
 }
 
-.education{
-  background-color: rgb(46, 199, 151);
-}
-
 .float {
   margin: 0 10px 0 10px;
   animation: float-horizontal 20s ease-in-out infinite;
