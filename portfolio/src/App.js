@@ -12,6 +12,7 @@ function App() {
       <Sidebar/>
       <div className="container">
         <OverviewSection/>
+        <SkillsSection/>
         <section className='experience'>
           <h1>I am 3 years experienced software developer having good command in JavaScript, Node.js, React.js, Java, PostgreSQL. During this period, I wrote a lot of industrial level code and most of my work is on production.</h1>
           {/* <p id="overviewcontent"></p> */}
@@ -19,7 +20,7 @@ function App() {
         <section className='projects'>
           <h1>Projects</h1>
         </section>
-        <SkillsSection/>
+        
       </div>
     </div>
   );

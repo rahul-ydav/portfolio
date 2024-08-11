@@ -1,3 +1,61 @@
 .skills{
-    background-color: rgb(46, 199, 151);
+    background-image: url('./assets/dragon-scales.svg');
+    /* background-color: black; */
+    color:white;
+    /* background-size:cover; */
+    
+    /* margin: 30px; */
+}
+
+.skillsMain{
+    /* padding-left: 30px; */
+    height: 100%;
+    width: 94%;
+    position: relative;
+    display: inline-flex;
+}
+
+.skillsChild{
+    margin:5px;
+}
+
+.skillsList{
+    /* border: 3px solid red; */
+    flex: 1;
+    padding: 30px;
+}
+
+.skillSet h4{
+    /* color: white; */
+    text-decoration: underline;
+    font-size: large;
+    margin: 10px 0 2px 3px;
+    /* font-weight: bold; */
+}
+
+.skillItems{
+    margin: 5px;
+    padding: 3px;
+    background: rgb(81, 34, 125);
+    border-radius: .2em;
+    font-weight: 200;
+    font-size: .3em;
+    letter-spacing: .03rem;
+
+}
+
+.skillsStyle{
+    /* border: 3px solid aqua; */
+    background-image: url('assets/random2.png'); 
+    background-size:contain;
+    border-radius: .5rem;
+    background-attachment: fixed;
+    flex: 1;
+}
+
+.styleText{
+    /* color: white; */
+    font-size: 5rem;
+    font-family: cursive;
+    text-align: center;
 }
