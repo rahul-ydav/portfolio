@@ -12,8 +12,20 @@
     fill: white;
     stroke: rgb(120 110 110);
     stroke-width: 1;
+    /* filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5)); */
+}
+
+.sideBar a:hover .sideBarSvg{
+    fill:bisque;
 }
 
 .sideBar a{
     margin-bottom: .5em;
+    /* border: 1px solid transparent; */
+    /* transition: 1s; */
+}
+
+.sideBar a:hover{
+    border: 1px solid white;
+    border-radius: .3em;
 }
