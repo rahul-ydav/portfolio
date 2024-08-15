@@ -47,11 +47,6 @@ section{
   grid-template-rows: subgrid;
 }
 
-
-.experience{
-  background-color: red;
-}
-
 .projects{
   background-color: royalblue;
 }
