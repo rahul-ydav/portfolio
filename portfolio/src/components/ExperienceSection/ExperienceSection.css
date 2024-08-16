@@ -8,7 +8,7 @@
     margin: 100px;
 }
 
-.timeline::after{
+.timeline.inView::after{
     content: '';
     position: absolute;
     width: 6px;

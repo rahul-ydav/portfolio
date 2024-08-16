@@ -1,3 +1,4 @@
+import React, {useEffect, useState, useRef} from 'react';
 import './ExperienceSection.css';
 
 function ExperienceSection(){
@@ -18,10 +19,33 @@ function ExperienceSection(){
             'timeperiod': 'July, 2017 - June, 2021',
             'text': 'I have completed my college from IIEST, Shibpur in Information Technology descipline.'
         }
-    ]
+    ];
+
+    const divRef = useRef(null);
+    const [isInView, setIsInView] = useState(false);
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          setIsInView(entry.isIntersecting);
+        },
+        { threshold: 0.1 } // Adjust threshold as needed
+      );
+  
+      if (divRef.current) {
+        observer.observe(divRef.current);
+      }
+  
+      return () => {
+        if (divRef.current) {
+          observer.unobserve(divRef.current);
+        }
+      };
+    }, []);
+
     return(
         <section className='experience'>
-          <div class="timeline">
+          <div class={`timeline ${isInView ? 'inView' : ''}`} ref={divRef}>
             {data.map((exp, idx) =>{
                 let side = (idx%2) ? 'right' : 'left';
                 return (
