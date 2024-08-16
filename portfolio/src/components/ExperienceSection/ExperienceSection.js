@@ -11,7 +11,7 @@ function ExperienceSection(){
         {
             'header': 'SaralWeb',
             'timeperiod': 'April, 2021 - June, 2022',
-            'text': 'I am Senior Software Engineer. I am responsible for adding new feature and maintaining the codebase as per clients requirement to the company. Also I have to review the code of fellow developers and resolve the timely required bugs.'
+            'text': 'I was Software Development Engineer. Solely created a complete project of showing minimum wages. Created backend of reconciliation project to find the difference between the records of xlsx and pdf file.'
         },
         {
             'header': 'College',
