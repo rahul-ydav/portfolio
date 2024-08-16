@@ -5,6 +5,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import OverviewSection from "./components/OverviewSection/OverviewSection";
 import SkillsSection from "./components/SkillsSection/SkillsSection";
 import ExperienceSection from "./components/ExperienceSection/ExperienceSection";
+import ProjectSection from "./components/ProjectSection/ProjectSection";
 
 function App() {
   return (
@@ -15,13 +16,11 @@ function App() {
         <OverviewSection/>
         <SkillsSection/>
         <ExperienceSection/>
-        <section className='projects'>
-          <h1>Projects</h1>
-        </section>
-        
+        <ProjectSection/>
       </div>
     </div>
   );
 }
 
 export default App;
+
