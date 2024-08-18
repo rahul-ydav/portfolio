@@ -4,18 +4,18 @@ function ProjectSection(){
     const data = [
         {
             title: 'Portfolio',
-            text: 'This website is an interface of my projects, that I create in my part time. Usually it contains the things, which I am making recently',
+            text: 'This website is a showcase of my part-time projects. It primarily features my latest work.',
             link: 'https://github.com/rahul-ydav/portfolio',
         },
         {
-            title: 'Portfolio',
-            text: 'This website is an interface of my projects, that I create in my part time. Usually it contains the things, which I am making recently',
-            link: 'https://github.com/rahul-ydav/portfolio',
+            title: 'BookMyShow',
+            text: 'Design and stimulate the backend of Book My Show App with basic features like creating accounts, adding movies, shows, halls, booking tickets. With the help of Java SpringBoot.',
+            link: 'https://github.com/rahul-ydav/BookMyShow',
         },
         {
-            title: 'Portfolio',
-            text: 'This website is an interface of my projects, that I create in my part time. Usually it contains the things, which I am making recently',
-            link: 'https://github.com/rahul-ydav/portfolio',
+            title: 'SplitWise ',
+            text: 'Design and stimulate the backend of SplitWise App with basic features like creating accounts, groups, adding expenses and settle-up expenses. With the help of Java SpringBoot.',
+            link: 'https://github.com/rahul-ydav/splitwise',
         }
     ];
     return (<section className='projects'>
