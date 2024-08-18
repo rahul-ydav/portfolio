@@ -15,7 +15,7 @@ function ExperienceSection(){
             'text': 'I was Software Development Engineer. Solely created a complete project of showing minimum wages. Created backend of reconciliation project to find the difference between the records of xlsx and pdf file.'
         },
         {
-            'header': 'College',
+            'header': 'IIEST, Shibpur',
             'timeperiod': 'July, 2017 - June, 2021',
             'text': 'I have completed my college from IIEST, Shibpur in Information Technology descipline.'
         }
