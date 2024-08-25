@@ -45,16 +45,16 @@ function ExperienceSection(){
 
     return(
         <section className='experience'>
-          <div class={`timeline ${isInView ? 'inView' : ''}`} ref={divRef}>
+          <div className={`timeline ${isInView ? 'inView' : ''}`} ref={divRef}>
             {data.map((exp, idx) =>{
                 let side = (idx%2) ? 'right' : 'left';
                 return (
-                    <div className={`expContainer ${side}Container`}>
-                        <div class="expTextbox">
+                    <div key={`expDiv${idx}`} className={`expContainer ${side}Container`}>
+                        <div className="expTextbox">
                             <h2>{exp.header}</h2>
                             <small>{exp.timeperiod}</small>
                             <p>{exp.text}</p>
-                            <span class={`exp${side}Arrow`}></span>
+                            <span className={`exp${side}Arrow`}></span>
                         </div>
                     </div>
                 )

@@ -13,32 +13,26 @@ function SkillsSection(){
 
     return (
         <section className='skills'>
-            <div class="skillsMain">
+            <div className="skillsMain">
                 {/* <h1>Skills</h1> */}
                 <div className="skillsList skillsChild">
 
-                    {skills.map((skillGroup) => {
+                    {skills.map((skillGroup, idx) => {
                         const skillMap = skillGroup.split(': ');
                         const heading = skillMap[0];
                         const similarSkills = skillMap[1].split(', ');
                         return (
-                            <div class="skillSet">
+                            <div key={`skillsDiv${idx}`} className="skillSet">
                                 <h4>{heading}</h4>
-                                {similarSkills.map(oneSkill =>{
-                                    return (<span class="skillItems">{oneSkill}</span>)
+                                {similarSkills.map((oneSkill, idx2) =>{
+                                    return (<span key={`skillsDiv${idx2}`} className="skillItems">{oneSkill}</span>)
                                 })}
                             </div>
                         );
                     })}
-                    {/* <div class="skillSet">
-                        <h4>Languages</h4>
-                        <span class="skillItems">JavaScript</span>
-                        <span class="skillItems">Java</span>
-                        <span class="skillItems">C/C++</span>
-                    </div> */}
                 </div>
-                <div class="skillsStyle skillsChild">
-                    <p class="styleText">Technology with Expreience</p>
+                <div className="skillsStyle skillsChild">
+                    <p className="styleText">Technology with Expreience</p>
                 </div>
             </div>
         </section>

@@ -21,7 +21,7 @@ function OverviewSection(){
     return(<section className='overview'>
 
       {/*  animated backgroung */}
-      <div class="bubbles">
+      <div className="bubbles">
         <span style={{"--i":"11"}}></span>
         <span style={{"--i":"5"}}></span>
         <span style={{"--i":"15"}}></span>
@@ -55,15 +55,16 @@ function OverviewSection(){
               <div><img id="mypic" src= {MyPic} alt="No profile pic"/></div>
               <div className="overviewAllText">
                 <h1 id="nameInOverview">Rahul Yadav</h1>
-                <p class="overviewSpan" style={{'fontSize': '1rem'}}>Full-Stack Developer/ Senior Software Engineer</p>
-                <p class="overviewSpan">with expertise in Node.js, React.js, PostgreSQL, Redis, and Kafka. Proven track record in designing scalable solutions and optimizing performance</p>
+                <p className="overviewSpan" style={{'fontSize': '1rem'}}>Full-Stack Developer/ Senior Software Engineer</p>
+                <p className="overviewSpan">with expertise in Node.js, React.js, PostgreSQL, Redis, and Kafka. Proven track record in designing scalable solutions and optimizing performance</p>
                 {/* <p id="overviewcontent">I am 3 years experienced software developer having good command in JavaScript, Node.js, React.js, Java, PostgreSQL. During this period, I wrote a lot of industrial level code and most of my work is on production.</p> */}
               </div>
             </div>
             <div id="techStackIcons">
             {
-              icons.map(Icon => {
-                return (<div
+              icons.map((Icon, idx) => {
+                return (<div 
+                  key={`overviewDiv${idx}`}
                   className = 'float'
                   // style={{ position: 'absolute',top: helper.initialy(), right: helper.initialx(), rotate: helper.initialTilt()} }
                 >

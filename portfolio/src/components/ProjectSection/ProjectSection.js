@@ -23,11 +23,11 @@ function ProjectSection(){
         <div className='cardContainer'>
             {data.map((project, idx) =>{
                 return (
-                    <div className='card'>
+                    <div key={`projectDiv${idx}`} className='card'>
                         <div className='cardContent'>
                             <h2>{project.title}</h2>
                             <p>{project.text}</p>
-                            <a href={`${project.link}`} target='_blank' class='readMore'>Read More</a>
+                            <a href={`${project.link}`} target='_blank' className='readMore'>Read More</a>
                         </div>
                     </div>
                 )
