@@ -7,7 +7,7 @@ function ExperienceSection(){
         {
             'header': 'Naviga',
             'timeperiod': 'July, 2022 - Present',
-            'text': 'I am Senior Software Engineer. I am responsible for adding new feature and maintaining the codebase as per clients requirement to the company. Also I have to review the code of fellow developers and resolve the timely required bugs.'
+            'text': 'I am a Senior Software Engineer, responsible for adding new features and maintaining the codebase according to client requirements. I also review the code of fellow developers and resolve bugs in a timely manner.'
         },
         {
             'header': 'SaralWeb',
@@ -17,7 +17,7 @@ function ExperienceSection(){
         {
             'header': 'IIEST, Shibpur',
             'timeperiod': 'July, 2017 - June, 2021',
-            'text': 'I have completed my college from IIEST, Shibpur in Information Technology descipline.'
+            'text': 'I completed my college at IIEST, Shibpur in Information Technology descipline.'
         }
     ];
 
